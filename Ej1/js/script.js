@@ -18,5 +18,18 @@ const strangeArray = [
 ];
 
 
+function acceso(){
+let array = strangeArray.filter((value) => typeof value === "string");
 
-console.log(strangeArray.filter((value) => typeof value === ""));
+let lista = document.getElementById("list");
+
+for (const element of array) { // el element recorre el array uno por uno 
+  
+lista.innerHTML += `<li>${element}</li>` 
+}
+
+}
+
+document.addEventListener("DOMContentLoaded", acceso());
+
+
