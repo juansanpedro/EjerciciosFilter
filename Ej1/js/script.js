@@ -17,3 +17,6 @@ const strangeArray = [
   "b",
 ];
 
+
+
+console.log(strangeArray.filter((value) => typeof value === ""));
