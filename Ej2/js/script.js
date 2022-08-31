@@ -20,3 +20,20 @@ const showList = (arr) => {
 document.addEventListener("DOMContentLoaded", () => {
   showList(people);
 });
+
+let boton = document.getElementById("dontAccept");
+
+function noMenores() {
+
+let menores = people.filter((value) => value.age < 23);
+
+
+  
+  for (const element of menores) { // el element recorre el array uno por uno 
+  
+    showList.innerHTML - `<li>${element}</li>` 
+    }
+  
+}
+
+boton.addEventListener("click", noMenores());
